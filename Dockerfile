@@ -11,6 +11,6 @@ RUN curl -SL $FTB_URL -o /tmp/ftb.zip && \
     find /opt/minecraft -name "*.log" -exec rm -f {} \; && \
     rm -rf /opt/minecraft/ops.* /opt/minecraft/whitelist.* /opt/minecraft/logs/* /tmp/*
 
-ENV MINECRAFT_VERSION 1.7.10
+ENV MINECRAFT_VERSION 1.12.2
 ENV MINECRAFT_OPTS -server -Xms2048m -Xmx3072m -XX:MaxPermSize=256m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC
-ENV MINECRAFT_STARTUP_JAR FTBServer-1.7.10-1614.jar
+ENV MINECRAFT_STARTUP_JAR FTBserver-1.12.2-14.23.2.2632-universal.jar
